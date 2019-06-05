@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, ImageBackground, View, AsyncStorage, Alert } from 'react-native';
+import { StyleSheet, ImageBackground, View, Alert } from 'react-native';
 import HomeImage from '../assets/img/bg-home.png'
 import BtnAdd from '../Components/ButtonAdd'
 import TextInput from '../Components/TextIpunt'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import axios from 'axios'
+import AsyncStorage from '@react-native-community/async-storage';
 
 
 

@@ -9,6 +9,8 @@ import { connect } from 'react-redux'
 import { onPlacaCpf } from '../store/actions/placaCpf'
 import GeraToken from '../GeraToken'
 
+
+
 class Auth extends Component {
     constructor(props) {
         super(props);
@@ -18,9 +20,9 @@ class Auth extends Component {
         }
     }
 
+    
+
     GeraToken = async () => {
-
-
 
         if (!this.state.placa) {
             return Alert.alert('Informe a placa')
@@ -31,6 +33,7 @@ class Auth extends Component {
         }
 
         const data = await GeraToken()
+        console.log(GeraToken())
         if (data) {
             this.props.onPlacaCpf({ ...this.state })
             this.props.navigation.navigate('Home')
@@ -38,6 +41,7 @@ class Auth extends Component {
         } else {
             console.log(false)
         }
+        
     }
 
 

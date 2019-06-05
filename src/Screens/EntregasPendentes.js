@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground, StyleSheet, AsyncStorage, FlatList } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet, FlatList } from 'react-native';
 import HomeImage from '../assets/img/bg-home.png'
 import Styles from '../Components/StylesPattern'
 import BtnSair from '../Components/ButtonSair'
@@ -7,6 +7,7 @@ import Entregas from '../Components/Pendentes'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import { connect } from 'react-redux'
+import AsyncStorage from '@react-native-community/async-storage';
 
 
 

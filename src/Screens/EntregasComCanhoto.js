@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground, StyleSheet, FlatList, AsyncStorage } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet, FlatList } from 'react-native';
 import ComponentEntregas from '../Components/ComponentEntregas'
 import FinalizadaCanhoto from '../Components/FinalizadaCanhoto'
 import { connect } from 'react-redux'
+import AsyncStorage from '@react-native-community/async-storage';
 
 initialState = {
     entregas: []

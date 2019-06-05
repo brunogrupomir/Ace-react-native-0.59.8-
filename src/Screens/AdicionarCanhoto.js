@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ImageBackground, View, Image, AsyncStorage, Alert, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, ImageBackground, View, Image, Alert, TouchableOpacity, Text } from 'react-native';
 import HomeImage from '../assets/img/bg-home.png'
 import BtnAdd from '../Components/ButtonAdd'
 import ImagePicker from 'react-native-image-picker';
@@ -7,6 +7,7 @@ import TextInput from '../Components/TextIpunt'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import axios from 'axios'
+import AsyncStorage from '@react-native-community/async-storage';
 
 
 

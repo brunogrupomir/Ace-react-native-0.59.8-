@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, ImageBackground, Modal, Alert, Text, AsyncStorage } from 'react-native';
+import { StyleSheet, View, ImageBackground, Modal, Alert, Text } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 import HomeImage from '../assets/img/bg-home.png'
 import BtnAdd from '../Components/ButtonAdd'
@@ -9,6 +9,7 @@ import axios from 'axios'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import Styles from '../Components/StylesPattern'
+import AsyncStorage from '@react-native-community/async-storage';
 
 
 
@@ -84,8 +85,6 @@ class AdicionarCodeBar extends Component {
         } else {
             Alert.alert('status')
         }
-
-
     }
 
     getEntregas = async () => {

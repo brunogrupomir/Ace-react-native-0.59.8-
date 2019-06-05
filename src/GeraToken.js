@@ -10,10 +10,9 @@ const GeraToken = async () => {
         console.log(res.data.Token)
         axios.defaults.headers.common['token']
             = `${res.data.Token}`
-        return true
+        return res.data.Token
     } catch (err) {
         console.log(err)
-        return false
     }
 }
 

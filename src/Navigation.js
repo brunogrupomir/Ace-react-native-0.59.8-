@@ -64,7 +64,7 @@ const MainRoutes = {
 }
 
 const MainNavigator = createSwitchNavigator(MainRoutes, {
-    initialRouteName: 'Auth'
+    initialRouteName: 'ValidaToken'
 })
 
 const AppContainer = createAppContainer(MainNavigator);

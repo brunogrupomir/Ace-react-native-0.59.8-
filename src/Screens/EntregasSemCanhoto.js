@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { FlatList, AsyncStorage, Alert } from 'react-native';
+import { FlatList, Alert } from 'react-native';
 import ComponentEntregas from '../Components/ComponentEntregas'
 import SemCanhoto from '../Components/SemCanhoto'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import { connect } from 'react-redux'
+import AsyncStorage from '@react-native-community/async-storage';
 
 initialState = {
     entregas: []
